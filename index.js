@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 
 var docloud = require('docloud-api');
 var program = require('commander');
@@ -268,4 +269,4 @@ program.command('delete-all')
 		.catch(function (error) {process.exit(1)})	
 	});
 
-program.parse(process.argv);
+module.exports=program;

@@ -1,11 +1,12 @@
 {
   "name": "docloud-cli",
-  "version": "0.0.2",
+  "version": "0.0.9",
   "description": "Command line interface of IBM Decision Optimization on Cloud (DOcloud)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": { "docloud": "./bin/docloud"},
   "keywords": [
     "CPLEX",
     "OPL",
