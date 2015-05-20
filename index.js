@@ -123,7 +123,11 @@ program.command('execute <dir>')
 			         .catch(function (error) {process.exit(1)})	 
 		   })
 		   .on('interrupted', function(jobid){console.log("Interrupted")})
-		   .on('failed', function(jobid){console.log("Failed")})
+		   .on('failed', function(jobid){
+			     client.getJob(jobid)
+		         .then(function (job) {console.log("job failed with message %s",job.failure.message)})
+		         .catch(function (error) {process.exit(1)})	 
+			   })
 		   .on('error', function(error){process.exit(1)})
 			 
 	});

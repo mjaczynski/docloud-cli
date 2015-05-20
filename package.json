@@ -1,6 +1,6 @@
 {
   "name": "docloud-cli",
-  "version": "0.0.9",
+  "version": "0.1.1",
   "description": "Command line interface of IBM Decision Optimization on Cloud (DOcloud)",
   "main": "index.js",
   "scripts": {
